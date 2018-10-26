@@ -14,7 +14,8 @@ public class SSLCertificateChecking {
 
     /**
      * Disables the SSL certificate checking for new instances of {@link HttpsURLConnection} This has been created to
-     * aid testing on a local box, not for use on production. call in onCreate or before any network calls are made
+     * aid testing on a local box, not for use on production. call in onCreate or before any network calls are made,
+     * code taken from https://gist.github.com/aembleton/889392
      */
     public static void disableSSLCertificateChecking() {
         TrustManager[] trustAllCerts = new TrustManager[]{new X509TrustManager() {
