@@ -8,10 +8,16 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.udacity.sandwichclub.utils.SSLCertificateChecking;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // needed for ssl issues in my development environment
+        SSLCertificateChecking.disableSSLCertificateChecking();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
