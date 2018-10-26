@@ -1,4 +1,4 @@
-# Sandwich Club Project Starter Code
+# Sandwich Club Project
 
 ## Project Overview
 In this project, you will complete the **Sandwich Club** app to
@@ -24,3 +24,8 @@ Download the [Sandwich Club app starter code.](https://github.com/udacity/sandwi
 Design the layout for the detail activity so the different elements
 display in a sensible way. Implement the JSON parsing in JsonUtils so it
 produces a Sandwich Object that can be used to populate the UI that you designed.
+
+### Aditional info
+My working environment is in an odd networking environment which for ease of programing I have added teh SSLCertificateChecking to disable SSL certificite checking.
+
+I have also updated the Picasso code to handle the case when an image could not be loaded.
